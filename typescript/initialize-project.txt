@@ -1,0 +1,22 @@
+npm init -y // package.json file
+
+tsc --init // tsconfig.json file
+
+npm install nodemon concurrently
+
+criar pastas src e build
+
+ir no tsconfig.json
+
+descomentar outDir e rootDir 
+
+outDir = build
+
+rootDir = src
+
+adicionar na tag script no package.json
+"start:build": "tsc -w",
+"start:run": "nodemon build/index.js",
+"start": "concurrently npm:start:*
+
+npm install @types/node"
